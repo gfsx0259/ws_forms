@@ -1,0 +1,6 @@
+<tpl name="follow_me_twitter">
+    <div style="text-align:center">
+        <img src="/static/follow_me_twitter/twitter_logo.png" />
+    </div>
+    <div class="twitter_button_img" id="twitter_button_img" events="onclick=onFollowMe"></div>
+</tpl>

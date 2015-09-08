@@ -1,0 +1,30 @@
+/*site_auth|Box*/
+.site_auth {
+}
+/*site_auth_a|Link*/
+.site_auth a {
+}
+/*site_auth_a:hover|Link hover*/
+.site_auth a:hover {
+}
+/*user_info|User info*/
+.user_info {
+}
+/*user_name|User name*/
+.user_info span {
+}
+/*form_box|Form box*/
+.auth_form {
+}
+/*form|Form*/
+.auth_form form {
+}
+/*input_text|Login input*/
+input[type="text"] {
+}
+/*input_password|Password input*/
+input[type="password"] {
+}
+/*input_submit|Submit button*/
+input[type="submit"] {
+}

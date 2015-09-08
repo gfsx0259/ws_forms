@@ -1,0 +1,17 @@
+.comments .list .controls {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+    .comments .list .btn_del_comment {
+        width: 16px;
+        height: 16px;
+        margin: 0;
+        float: right;
+        cursor: pointer;
+    }
+
+    .comments .list .btn_del_comment {
+        background: transparent url(/static/icons/cross.png) no-repeat;
+    }

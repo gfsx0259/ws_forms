@@ -1,0 +1,5 @@
+<tpl name="contact_us_content">
+    <div id="form"></div>
+    <div id="msg_success" class="message_success" style="display: none">Success</div>
+    <div id="msg_error" class="message_error" style="display: none">Error</div>
+</tpl>

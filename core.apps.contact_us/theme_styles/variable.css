@@ -1,0 +1,82 @@
+/*form|Form*/
+form.user {
+    display: block;
+    width: auto;
+    padding: 0;
+    color: #000;
+}
+
+
+
+/*outline|Outline*/
+    form.user .outline {
+        padding: 2px 8px;
+    }
+
+
+/*outline_active|Outline active*/
+        form.user .outline_active {
+            padding: 0 6px;
+            border: 2px solid #0F0;
+        }
+
+
+/*section|Form section*/
+    form.user .section {
+        padding: 4px 1px;
+        clear: both;
+        position: relative;
+        zoom: 1;
+        overflow: hidden;                                        
+    }
+
+
+/*header1|Header*/
+form.user .header1 {
+    margin: 0 0 6px 0;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/*input=text|Text input*/
+form.user input[type="text"] {
+    border: 1px solid #809DB9;
+    color: #000;
+    background: #FFF;
+    width: 100%;
+    display: block;
+    padding: 2px 0;
+    margin: 0 -1px;
+}
+
+/*textarea|Textarea*/
+form.user textarea {
+    width: 100%;
+    display: block;
+    padding: 2px 0;
+    margin: 0 -1px;
+    border: 1px solid #809DB9;
+    color: #000;
+    background: #FFF;
+}
+
+
+/*c31|3 columns (first column)*/
+    form.user .c31 {
+        width: 30%;
+        float: left;
+    }
+
+/*c32|3 columns (second column)*/
+    form.user .c32 {
+        width: 30%;
+        float: left;
+        margin-left: 5%;
+    }
+
+
+/*input=submit|Submit button*/
+form.user input[type="submit"] {
+    display: block;
+    margin: 4px auto;
+}

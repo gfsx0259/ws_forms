@@ -1,0 +1,39 @@
+<tpl name="user_reg_register">
+    <div id="user_reg_register">
+        <div id="sec_reg_reason" style="display: none">
+            <div id="reg_msg" class="info"></div>
+            <textarea id="inp_r_reg_reason" style="width:100%; height: 50px;"/>
+        </div>
+
+        <div class="form_row">
+            <label>First name:</label>
+            <input type="text" id="inp_r_first_name" class="text" events="onenter=onRegisterClick"/>
+        </div>
+        <div class="form_row">
+            <label>Last name:</label>
+            <input type="text" id="inp_r_last_name" class="text" events="onenter=onRegisterClick"/>
+        </div>
+        <div class="form_row">
+            <label>Email:</label>
+            <input type="text" id="inp_r_email" class="text" events="onenter=onRegisterClick"/>
+        </div>
+        <div class="form_row">
+            <label>Password:</label>
+            <input type="password" id="inp_r_pwd" class="text" events="onenter=onRegisterClick"/>
+        </div>
+        <div class="form_row">
+            <label>Confirm password:</label>
+            <input type="password" id="inp_r_pwd2" class="text" events="onenter=onRegisterClick"/>
+        </div>
+        <div class="form_row">
+            <div style="margin-top: 24px;">
+                <img id="reg_captcha_img" class="captcha"/> 
+                <label>Repeat numbers</label>
+                <input type="text" id="inp_r_captcha_code" class="text" events="onenter=onRegisterClick" style="width: 50px; display: inline"/>
+            </div>
+        </div>
+        <div class="form_row">
+            <button id="btn_r_submit" class="submit" events="onclick=onRegisterClick"> Go </button>    
+        </div>
+    </div>
+</tpl>

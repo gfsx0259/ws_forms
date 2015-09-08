@@ -1,0 +1,11 @@
+<tpl name="user_reg_reset_pwd">
+    <div id="user_reg_reset_pwd">
+        <div class="form_row">
+            <label>Enter your Email:</label>
+            <input type="text" id="inp_rp_email" class="text"  events="onenter=onResetPwdClick"/>
+        </div>
+        <div class="form_row">
+            <button id="btn_rp_submit" class="submit" events="onclick=onResetPwdClick"> Go </button>    
+        </div>
+    </div>
+</tpl>
