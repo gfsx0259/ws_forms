@@ -11,7 +11,7 @@ core.apps.twitter = function(args) {
         message_type: 0
     }
 
-}
+};
 
 
 core.apps.twitter.prototype = {
@@ -75,6 +75,6 @@ core.apps.twitter.prototype = {
     }
 
 
-}
+};
 core.apps.twitter.extendPrototype(core.components.html_component);
 core.apps.twitter.extendPrototype(core.components.desktop_app);

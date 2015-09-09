@@ -3,13 +3,12 @@ core.apps.comments = function(args) {
     this.defaultProfile = {
         title: "",
         app_style: "",
-        sid: null,
         variable_content: false
-    }
+    };
 
     this.page = 1;
     core.data.comments_sources = false;
-}
+};
 
 
 
@@ -80,7 +79,7 @@ core.apps.comments.prototype = {
             act: "get_page",
             topic_id: this.topic_id,
             page: this.page
-        }
+        };
         core.transport.send("/controller.php", r, this.onPageData.bind(this));
     },
 
@@ -99,7 +98,7 @@ core.apps.comments.prototype = {
                 var nm = c.email != "" ? 
                     { tag: "a", href: "mailto:" + c.email }
                     :
-                    { tag: "span" }
+                    { tag: "span" };
 
                 nm.className = "name";
                 nm.innerHTML = c.name;
@@ -232,7 +231,7 @@ core.apps.comments.prototype = {
             id: id,
             topic_id: this.topic_id,
             page: this.page
-        }
+        };
         core.transport.send("/controller.php", r, this.onPageData.bind(this));
     },
 
@@ -340,7 +339,7 @@ core.apps.comments.prototype = {
             email_visible: this.$["inp_hidden_email"].checked ? "0" : "1",
             content: content,
             code: code
-        }
+        };
         core.transport.send("/controller.php", r, this.onCommentAdded.bind(this));
     },
 
@@ -368,7 +367,7 @@ core.apps.comments.prototype = {
 
 
 
-}
+};
 
 core.apps.comments.extendPrototype(core.components.html_component);
 core.apps.comments.extendPrototype(core.components.desktop_app);

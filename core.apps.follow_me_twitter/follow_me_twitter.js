@@ -7,7 +7,7 @@ core.apps.follow_me_twitter = function(args) {
         button_text:"Follow Me"
     }
 
-}
+};
 
 
 core.apps.follow_me_twitter.prototype = {
@@ -33,6 +33,6 @@ core.apps.follow_me_twitter.prototype = {
         desktop.loadURL("http://twitter.com/"+this.profile["username"]);
     }
 
-}
+};
 core.apps.follow_me_twitter.extendPrototype(core.components.html_component);
 core.apps.follow_me_twitter.extendPrototype(core.components.desktop_app);

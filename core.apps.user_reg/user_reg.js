@@ -6,7 +6,7 @@ core.apps.user_reg = function(args) {
         app_style: ""
     }
 
-}
+};
 
 
 core.apps.user_reg.prototype = {
@@ -95,20 +95,20 @@ core.apps.user_reg.prototype = {
 
     // Register
     loadRegCaptcha: function() {
-        this.$["reg_captcha_img"].src = "/controller.php?dialog=site_users&act=reg_captcha&_=" + Math.random();
+        this.$["reg_captcha_img"].src = "/controller.php?dialog=users_manager&act=reg_captcha&_=" + Math.random();
     },
 
 
     onRegisterClick: function(e) {
         var p = {
-            dialog: "site_users",
+            dialog: "users_manager",
             act: "register",
             first_name: this.$["inp_r_first_name"].value.trim(),
             last_name: this.$["inp_r_last_name"].value.trim(),
             email: this.$["inp_r_email"].value.trim(),
             captcha_code: this.$["inp_r_captcha_code"].value.trim(),
             confirm_page_url: location.href
-        }
+        };
 
         if(p.email == "") {
             this.showMessage("error", "Incorrect email");
@@ -180,11 +180,11 @@ core.apps.user_reg.prototype = {
         if(email == "") return;
         this.$["btn_rp_submit"].disabled = true;
         var p = {
-            dialog: "site_users",
+            dialog: "users_manager",
             act: "reset_pwd",
             email: email,
             reset_page_url: location.href
-        }
+        };
         core.transport.send("/controller.php", p, this.onResetPwdResponce.bind(this));        
     },
 

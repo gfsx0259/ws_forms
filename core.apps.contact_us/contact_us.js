@@ -4,7 +4,7 @@ core.apps.contact_us = function(args) {
         title: "",
         app_style: "",
         send_autoreply: 0
-    }
+    };
 
 
     this.form_structure = {
@@ -47,7 +47,7 @@ core.apps.contact_us = function(args) {
           }
         ]
     }; //form struct
-}
+};
 
 
 core.apps.contact_us.prototype = {
@@ -64,7 +64,7 @@ core.apps.contact_us.prototype = {
             parent_el: this.$["form"],
             target_type: "callback",
             target_value: this.onFormSubmit.bind(this)
-        }
+        };
         this.form = new core.objects.form(fp);
         this.form.setStructure(this.form_structure, "contact_us");
         this.form.render();
@@ -94,7 +94,7 @@ core.apps.contact_us.prototype = {
                     message: data.message,
                     captcha: data.captcha,
                     autoreply: this.profile["send_autoreply"]
-                }
+                };
                 if(core.data.contact_us_emails && core.data.contact_us_emails[this.id]) {
                     r.email = core.data.contact_us_emails[this.id];
                 }
@@ -128,6 +128,6 @@ core.apps.contact_us.prototype = {
         this.hideElements(["msg_error", "msg_success"]);
     }
 
-}
+};
 core.apps.contact_us.extendPrototype(core.components.html_component);
 core.apps.contact_us.extendPrototype(core.components.desktop_app);

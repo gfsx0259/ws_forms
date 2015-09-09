@@ -39,7 +39,7 @@ core.apps.contact_us.extendPrototype({
             dialog: "contact_us",
             act: "delete",
             widget_id: this.id
-        }
+        };
         core.transport.send("/controller.php", p, this.onDeleteResponse.bind(this));
     },
 

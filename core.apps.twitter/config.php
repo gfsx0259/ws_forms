@@ -1,22 +1,31 @@
 <?
 
-    $config["js_apps"]["core.apps.twitter"] = array(
+$config["js_apps"]["core.apps.twitter"] = array(
 
-        "version" => 1,
+    'general' => array(
+        'title' => 'Twitter',
+        'name' => 'twitter',//should be like 3th part of folder
+        'version' => '1.0.0',
+        'icon' => 'icon.png',
+        'category' => CATEGORY_SOCIAL,
+        'description' => ''
+    ),
 
-        "content" => array(
-            USERTYPE_ADMIN => array(
-                "code" => array(
-                    "twitter.js",
-                    "twitter.admin.js"
-                )
-            ),
-            USERTYPE_GUEST => array(
-                "code" => array("twitter.js")
+    "version" => 1,
+
+    "content" => array(
+        USERTYPE_ADMIN => array(
+            "code" => array(
+                "twitter.js",
+                "twitter.admin.js"
             )
+        ),
+        USERTYPE_GUEST => array(
+            "code" => array("twitter.js")
         )
-
     )
+
+)
 
 
 ?>

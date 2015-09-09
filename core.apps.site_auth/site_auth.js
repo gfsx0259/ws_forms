@@ -4,7 +4,7 @@ core.apps.site_auth = function(args) {
         title: "",
         reg_page: ""
     }
-}
+};
 
 
 core.apps.site_auth.prototype = {
@@ -46,6 +46,6 @@ core.apps.site_auth.prototype = {
         desktop.loadURL(url);
     }
 
-}
+};
 core.apps.site_auth.extendPrototype(core.components.html_component);
 core.apps.site_auth.extendPrototype(core.components.desktop_app);
