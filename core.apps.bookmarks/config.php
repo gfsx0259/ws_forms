@@ -5,7 +5,6 @@ $config["js_apps"]["core.apps.bookmarks"] = array(
         'title' => 'bookmarks',
         'name' => 'bookmarks',//should be like 3th part of folder
         'version' => '1.0.0',
-        'icon' => 'icon.png',
         'category' => CATEGORY_SOCIAL,
         'description' => ''
     ),

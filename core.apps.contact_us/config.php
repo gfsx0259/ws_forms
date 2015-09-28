@@ -6,7 +6,6 @@ $config["js_apps"]["core.apps.contact_us"] = array(
         'title' => 'Contact Us',
         'name' => 'contact_us',//should be like 3th part of folder
         'version' => '1.0.0',
-        'icon' => 'icon.png',
         'category' => CATEGORY_FORMS,
         'description' => '',
         'depends' => [

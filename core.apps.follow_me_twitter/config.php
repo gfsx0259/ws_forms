@@ -6,7 +6,6 @@ $config["js_apps"]["core.apps.follow_me_twitter"] = array(
         'title' => 'Follow Me Twitter',
         'name' => 'follow_me_twitter',//should be like 3th part of folder
         'version' => '1.0.0',
-        'icon' => 'icon.png',
         'category' => CATEGORY_SOCIAL,
         'description' => ''
     ),

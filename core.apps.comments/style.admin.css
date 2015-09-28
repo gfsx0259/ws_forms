@@ -13,5 +13,5 @@
     }
 
     .comments .list .btn_del_comment {
-        background: transparent url("/js_apps/core.apps.comments/images/cross.png") no-repeat;
+        background: transparent url("/vendor/generdyn/forms/core.apps.comments/images/cross.png") no-repeat;
     }
