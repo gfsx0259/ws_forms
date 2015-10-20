@@ -5,11 +5,11 @@
             <a events="onclick=onAuthLogoutClick">Logout</a>
         </div>
 
-        <div id="auth_not_logged" style="display: none" class="auth_form">
+        <div id="auth_not_logged" style="display: none" class="auth_form form-group">
             <form id="auth_form" action="/user/?mode=login" method="post">
-               <input type="text" name="email" class="login"/>
-               <input type="password" name="pwd" class="pwd"/>
-               <input type="submit" class="submit" value=" Go "/>
+               <input type="text" name="email" class="login form-control form-group"/>
+               <input type="password" name="pwd" class="pwd form-control form-group"/>
+               <input type="submit" class="submit btn btn-primary" value=" Go "/>
             </form>
             <div id="site_auth_user_links">
                 <a id="link_register_account" events="onclick=onRegisterClick">Register account</a> |

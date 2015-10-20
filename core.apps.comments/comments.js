@@ -248,34 +248,34 @@ core.apps.comments.prototype = {
                 { tag: "div", 
                   childs: [
                     { tag: "label", innerHTML: "Name" },
-                    { tag: "input", className: "text", type: "text", id: "inp_name" }
+                    { tag: "input", className: "text form-control", type: "text", id: "inp_name" }
                   ]},
                 { tag: "div", 
                   childs: [
                     { tag: "label", innerHTML: "Email" },
-                    { tag: "input", className: "text", type: "text", id: "inp_email" }
+                    { tag: "input", className: "text form-control", type: "text", id: "inp_email" }
                   ]},
                 { tag: "div", 
                   childs: [
-                    { tag: "input", type: "checkbox", id: "inp_hidden_email" },
+                    { tag: "input", type: "checkbox", id: "inp_hidden_email", className: 'form-control'},
                     { tag: "text", innerHTML: " Hide Email" }
                   ]},
                 { tag: "div", 
                   childs: [
-                    { tag: "label", innerHTML: "Comment" },
+                    { tag: "label", innerHTML: "Comment", className: 'form-control' },
                     { tag: "textarea", id: "inp_content" }
                   ]},
                 { tag: "div", className: "captcha",
                   childs: [
                     { tag: "text", innerHTML: "Repeat numbers" },
                     { tag: "img", className: "captcha", id: "captcha" },
-                    { tag: "input", className: "code", type: "text", id: "inp_code" }
+                    { tag: "input", className: "code form-control", type: "text", id: "inp_code" }
                   ]},
                 { tag: "span", className: "error", id: "error" },
                 { tag: "div", style: { textAlign: "center" },
                   childs: [
                     { tag: "input", type: "button", value: "Post comment",
-                      id: "btn_post",
+                      id: "btn_post", className: 'btn btn-primary',
                       events: { onclick: "addComment" } }
                   ]}
               ]}

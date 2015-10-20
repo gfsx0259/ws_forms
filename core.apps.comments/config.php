@@ -5,7 +5,7 @@ $config["js_apps"]["core.apps.comments"] = array(
         'title' => 'Comments',
         'name' => 'comments',//should be like 3th part of folder
         'version' => '1.0.0',
-        'category' => CATEGORY_SOCIAL,
+        'category' => CATEGORY_FORMS,
         'description' => '',
         'depends' => []
     ),
